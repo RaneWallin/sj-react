@@ -1,3 +1,30 @@
+@import "general";
+
 .links {
   color: pink;
+}
+
+.hamburger-menu {
+  position: relative;
+  background-color: #98A4AF;
+  margin: 0 auto;
+  top: 0;
+  height: 50px;
+  display: flex;
+  max-width: 1024px;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 10%;
+  color: #F9FAFA;
+  width: 100%;
+  //max-width: 1024px;
+  z-index: 75;
+  font-size: 2.4rem;
+  .hamburger {
+    background-image: url("../img/nav-hamburger.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 21px;
+  }
 }
