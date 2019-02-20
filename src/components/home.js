@@ -1,15 +1,22 @@
-import React, { Component } from 'react';
-import Navigation from './navigation';
+import React, { Component } from "react";
+import Navigation from "./navigation";
+import Header from "./header";
+
+// image imports
+import jumbo from "../img/contact/contact-jumbotron.png";
 
 class Home extends Component {
-    render() {
-        return (
-            <div>
-                <Navigation />
-                <h1>Home page</h1>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="constrained">
+        <Navigation />
+        <Header
+          headerImage={jumbo}
+          headline="Integrity,<br /> Excellence, <br /> Progress."
+        />
+      </div>
+    );
+  }
 }
 
 export default Home;
