@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     //let headerImage = require(this.props.headerImage);
     return (
-      <div className="constrainted jumbo-container">
+      <div className="jumbo-container">
         <img
           alt="Skyscraper viewed from the ground."
           src={`${this.props.headerImage}`}

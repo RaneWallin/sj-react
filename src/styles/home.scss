@@ -1,1 +1,28 @@
 @import "general";
+
+// .home-card {
+//   flex-direction: row-reverse;
+// }
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 5%;
+  margin: 30px 0;
+  p {
+    font-size: 2vw;
+    margin: 20px 0;
+  }
+  button {
+    padding: 10px 15px;
+    width: fit-content;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.2vw;
+  }
+  h2 {
+    font-size: 1.6vw;
+    font-weight: bold;
+  }
+}

@@ -4,8 +4,12 @@ import "../styles/card.scss";
 class Card extends Component {
   render() {
     return (
-      <div className="constrainted">
-        <h2>This is a card</h2>
+      <div className="card" style={{ flexDirection: this.props.flexDirection }}>
+        <img
+          alt={this.props.imageDescription}
+          src={`${this.props.cardImageUrl}`}
+        />
+        <div className="card-content">{this.props.children}</div>
       </div>
     );
   }
