@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import Navigation from './navigation';
 
 class Home extends Component {
     render() {
-        return <h1>Home page</h1>
+        return (
+            <div>
+                <Navigation />
+                <h1>Home page</h1>
+            </div>
+        );
     }
 }
 
