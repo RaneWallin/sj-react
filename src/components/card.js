@@ -6,6 +6,7 @@ class Card extends Component {
     return (
       <div className="card" style={{ flexDirection: this.props.flexDirection }}>
         <img
+          className="card-image"
           alt={this.props.imageDescription}
           src={`${this.props.cardImageUrl}`}
         />

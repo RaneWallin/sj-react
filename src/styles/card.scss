@@ -2,7 +2,14 @@
 
 .card {
   display: flex;
+  justify-content: space-between;
   //margin: 15px 5%;
+  width: 100%;
+}
+
+.card-image {
+  display: block;
+  max-width: 100%;
   width: 100%;
 }
 
