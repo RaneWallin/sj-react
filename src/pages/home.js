@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Navigation from "../components/navigation";
 import Header from "../components/header";
+import Card from "../components/card";
 
 // image imports
-import jumbo from "../img/contact/contact-jumbotron.png";
+import jumbo from "../img/home/home-jumbotron.png";
 
 class Home extends Component {
   render() {
@@ -12,8 +13,10 @@ class Home extends Component {
         <Navigation />
         <Header
           headerImage={jumbo}
-          headline="Integrity,<br /> Excellence, <br /> Progress."
+          headline="Integrity,<br /> Excellence,<br /> Progress."
         />
+        <Card />
+        <Card />
       </div>
     );
   }

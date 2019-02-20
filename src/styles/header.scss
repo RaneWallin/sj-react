@@ -1,9 +1,10 @@
 @import "./general";
 
 .jumbo-container {
-  top: 0;
-  position: absolute;
-  margin-top: 50px;
+  //top: 0;
+  //position: absolute;
+  //margin-top: 50px;
+  position: relative;
   img {
     width: 100%;
   }
@@ -11,8 +12,11 @@
 
 h1 {
   position: absolute;
-  bottom: 12%;
-  left: 8%;
+  // bottom: 25%;
+  //left: 10%;
+  //top: 80%;
+  margin-left: 8%;
+  margin-top: -20%;
   color: #f9fafa;
   font-size: 4vw;
   font-family: Roboto, Arial, sans-serif;
