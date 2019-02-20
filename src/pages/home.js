@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Navigation from "./navigation";
-import Header from "./header";
+import Navigation from "../components/navigation";
+import Header from "../components/header";
 
 // image imports
 import jumbo from "../img/contact/contact-jumbotron.png";
