@@ -1,30 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './css/index.css'
+import './styles/index.css'
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 import App from './App'
 import Home from './components/home';
-import Users from './components/users';
 import Contact from './components/contact';
 import Notfound from "./components/notfound";
+import Services from "./components/services";
 
 const routing = (
     <Router>
         <div>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/users">Users</Link>
-                </li>
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
-            </ul>
             <Switch>
                 <Route exact path="/" component={Home}/>
-                <Route path="/users" component={Users}/>
+                <Route path="/services" component={Services}/>
                 <Route path="/contact" component={Contact}/>
                 <Route component={ Notfound }/>
             </Switch>
