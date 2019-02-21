@@ -18,8 +18,9 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Navigation />
+
         <PageHolder>
+          <Navigation />
           <Header
             headerImage={jumbo}
             headline="Integrity,<br /> Excellence,<br /> Progress."

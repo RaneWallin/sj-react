@@ -25,7 +25,7 @@ class Navigation extends Component {
     let navMenu = <div />;
     if (this.state.navOpen) {
       navMenu = (
-        <div className="nav-links constrained">
+        <div className="nav-links show-nav">
           <NavLink to="/" className="links" activeClassName="active-links">
             Home
           </NavLink>
@@ -52,15 +52,17 @@ class Navigation extends Component {
 
   render() {
     return (
-      <div className="constrained">
-        <div className="hamburger-menu">
-          <div className="nav-logo">S&J</div>
-          <div onClick={this.toggleNavigation} className="hamburger">
-            {this.getNavImage()}
+        <div className="nav-container">
+          <div className="nav-link-holder">
+            <div className="top-menu">
+              <div className="nav-logo">S&J</div>
+              <div onClick={this.toggleNavigation} className="hamburger">
+                {this.getNavImage()}
+              </div>
+            </div>
+            {this.toggleLinks()}
           </div>
         </div>
-        {this.toggleLinks()}
-      </div>
     );
   }
 }
