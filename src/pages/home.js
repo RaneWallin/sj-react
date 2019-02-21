@@ -8,7 +8,7 @@ import PageHolder from "../components/page-holder";
 import Navigation from "../components/navigation";
 import Header from "../components/header";
 import CardHolder from "../components/card-holder";
-import Card from "../components/card";
+import IntroCard from "../components/intro-card";
 import Project from "../components/project";
 
 // image imports
@@ -28,13 +28,9 @@ class Home extends Component {
             headline="Integrity,<br /> Excellence,<br /> Progress."
           />
           <CardHolder>
-            <Card
-              className="home-card"
-              customStyles={{
-                flexDirection: "row-reverse",
-                margin: `${cardMargin}`
-              }}
-              cardImageUrl={homeImage1}
+            <IntroCard
+              flexDirection="row-reverse"
+              imageUrl={homeImage1}
               imageDescription="A thing"
             >
               <div className="intro-text left-text">
@@ -46,11 +42,11 @@ class Home extends Component {
                 </p>
                 <button id="learn-more">Learn More</button>
               </div>
-            </Card>
-            <Card
-              className="home-card"
-              customerStyles={{ flexDirection: "row", margin: `${cardMargin}` }}
-              cardImageUrl={homeImage2}
+            </IntroCard>
+
+            <IntroCard
+              flexDirection="row"
+              imageUrl={homeImage2}
               imageDescription="Another thing"
             >
               <div className="intro-text right-text">
@@ -62,7 +58,7 @@ class Home extends Component {
                 </p>
                 <button id="view-designs">View Designs</button>
               </div>
-            </Card>
+            </IntroCard>
           </CardHolder>
           <CardHolder>
             <Project />
