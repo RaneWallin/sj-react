@@ -52,17 +52,17 @@ class Navigation extends Component {
 
   render() {
     return (
-        <div className="nav-container">
-          <div className="nav-link-holder">
-            <div className="top-menu">
-              <div className="nav-logo">S&J</div>
-              <div onClick={this.toggleNavigation} className="hamburger">
-                {this.getNavImage()}
-              </div>
+      <div className="nav-container">
+        <div className="nav-link-holder">
+          <div className="top-menu">
+            <div className="nav-logo">S&J</div>
+            <div onClick={this.toggleNavigation} className="hamburger">
+              {this.getNavImage()}
             </div>
-            {this.toggleLinks()}
           </div>
+          {this.toggleLinks()}
         </div>
+      </div>
     );
   }
 }
