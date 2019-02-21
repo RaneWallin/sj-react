@@ -9,6 +9,7 @@ import Navigation from "../components/navigation";
 import Header from "../components/header";
 import CardHolder from "../components/card-holder";
 import Card from "../components/card";
+import Project from "../components/project";
 
 // image imports
 import jumbo from "../img/home/home-jumbotron.png";
@@ -62,6 +63,9 @@ class Home extends Component {
                 <button id="view-designs">View Designs</button>
               </div>
             </Card>
+          </CardHolder>
+          <CardHolder>
+            <Project />
           </CardHolder>
         </PageHolder>
       </div>
