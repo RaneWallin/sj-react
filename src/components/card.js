@@ -4,7 +4,7 @@ import "../styles/card.scss";
 class Card extends Component {
   render() {
     return (
-      <div className="card" style={{ flexDirection: this.props.flexDirection }}>
+      <div className="card" style={this.props.customStyles}>
         <img
           className="card-image"
           alt={this.props.imageDescription}
