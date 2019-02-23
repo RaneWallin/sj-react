@@ -1,0 +1,41 @@
+@import "general";
+
+// .home-card {
+//   flex-direction: row-reverse;
+// }
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  //padding-right: 5%;
+  margin: 30px 0;
+  p {
+    font-size: 1.3vw;
+    margin: 20px 0;
+  }
+  button {
+    padding: 10px 15px;
+    width: fit-content;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.2vw;
+    cursor: pointer;
+  }
+  h2 {
+    font-size: 1.6vw;
+    font-weight: bold;
+  }
+}
+
+.right-text {
+  padding-left: 10%;
+}
+.left-text {
+  padding-right: 10%;
+}
+
+.home-card {
+  margin: 15px 0;
+  background-color: pink;
+}

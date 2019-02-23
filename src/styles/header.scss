@@ -1,0 +1,19 @@
+@import "./general";
+
+.jumbo-container {
+  z-index: -1;
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+h1 {
+  position: absolute;
+  margin-left: 8%;
+  margin-top: -250px;
+  color: #f9fafa;
+  font-size: 4vw;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: bold;
+}
