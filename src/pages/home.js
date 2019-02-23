@@ -9,16 +9,18 @@ import Navigation from "../components/navigation";
 import Header from "../components/header";
 import CardHolder from "../components/card-holder";
 import IntroCard from "../components/intro-card";
-import Project from "../components/project";
+import ProjectCard from "../components/project-card";
 
 // image imports
 import jumbo from "../img/home/home-jumbotron.png";
 import homeImage1 from "../img/home/home-img-1.png";
 import homeImage2 from "../img/home/home-img-2.png";
+import villasImage from "../img/home/home-villas-img.png";
+import outskirtsImage from "../img/home/home-outskirts-img.png";
+import blocksImage from "../img/home/home-the-blocks-img.png";
 
 class Home extends Component {
   render() {
-    const cardMargin = "50px 0";
     return (
       <div>
         <PageHolder>
@@ -60,8 +62,70 @@ class Home extends Component {
               </div>
             </IntroCard>
           </CardHolder>
+          <h2>Recent Projects</h2>
           <CardHolder>
-            <Project />
+            <ProjectCard
+              imageUrl={villasImage}
+              imageDescription="Villa image"
+              headline="THE VILLAS"
+              cardDirection="flex-end"
+            >
+              <p>
+                The Villas bring to the table win-win survival strategies to
+                ensure proactive domination. At the end of the day, going
+                forward, a new normal that has evolved from generation X is on
+                the runway heading towards a streamlined cloud solution.
+              </p>
+              <p>
+                Capitalize on low hanging fruit to identify a ballpark value
+                added activity to beta test. Override the digital divide with
+                additional clickthroughs from DevOps. Nanotechnology immersion
+                along the information highway will close the loop on focusing
+                solely on the bottom line.
+              </p>
+            </ProjectCard>
+            <ProjectCard
+              imageUrl={outskirtsImage}
+              imageDescription="outskirts image"
+              headline={"OUTSKIRTS"}
+              cardDirection="flex-start"
+            >
+              <p>
+                The Outskirts are amazing to the table win-win survival
+                strategies to ensure proactive domination. At the end of the
+                day, going forward, a new normal that has evolved from
+                generation X is on the runway heading towards a streamlined
+                cloud solution.
+              </p>
+              <p>
+                Capitalize on low hanging fruit to identify a ballpark value
+                added activity to beta test. Override the digital divide with
+                additional clickthroughs from DevOps. Nanotechnology immersion
+                along the information highway will close the loop on focusing
+                solely on the bottom line.
+              </p>
+            </ProjectCard>
+            <ProjectCard
+              imageUrl={blocksImage}
+              imageDescription="blocks image"
+              headline={"THE BLOCKS"}
+              cardDirection={"flex-end"}
+            >
+              <p>
+                The Blocks are amazing to the table win-win survival strategies
+                to ensure proactive domination. At the end of the day, going
+                forward, a new normal that has evolved from generation X is on
+                the runway heading towards a streamlined cloud solution.
+              </p>
+
+              <p>
+                Capitalize on low hanging fruit to identify a ballpark value
+                added activity to beta test. Override the digital divide with
+                additional clickthroughs from DevOps. Nanotechnology immersion
+                along the information highway will close the loop on focusing
+                solely on the bottom line.
+              </p>
+            </ProjectCard>
           </CardHolder>
         </PageHolder>
       </div>

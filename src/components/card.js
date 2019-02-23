@@ -12,6 +12,7 @@ const Card = ({
 }) => {
   return (
     <div className="card" style={cardStyles}>
+      <h2 style={headlineStyles}> {headline} </h2>
       <img
         className="card-image"
         style={imageStyles}
