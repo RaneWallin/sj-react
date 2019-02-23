@@ -8,7 +8,7 @@ const IntroCard = ({ children, imageUrl, imageDescription, flexDirection }) => {
       cardImageUrl={imageUrl}
       imageDescription="A thing"
     >
-      {children}
+      <div style={contentStyles}>{children}</div>
     </Card>
   );
 };
@@ -19,6 +19,10 @@ const cardStyles = flexDirection => {
     display: "flex",
     flexDirection: `${flexDirection}`
   };
+};
+
+const contentStyles = {
+  fontSize: "1.3vw"
 };
 
 export default IntroCard;
