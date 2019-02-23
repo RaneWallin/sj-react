@@ -10,6 +10,7 @@ import Header from "../components/header";
 import CardHolder from "../components/card-holder";
 import IntroCard from "../components/intro-card";
 import ProjectCard from "../components/project-card";
+import Footer from "../components/footer";
 
 // image imports
 import jumbo from "../img/home/home-jumbotron.png";
@@ -62,8 +63,8 @@ class Home extends Component {
               </div>
             </IntroCard>
           </CardHolder>
-          <h2>Recent Projects</h2>
           <CardHolder>
+            <h2>Recent Projects</h2>
             <ProjectCard
               imageUrl={villasImage}
               imageDescription="Villa image"
@@ -127,6 +128,7 @@ class Home extends Component {
               </p>
             </ProjectCard>
           </CardHolder>
+          <Footer />
         </PageHolder>
       </div>
     );
