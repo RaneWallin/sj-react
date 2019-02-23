@@ -5,3 +5,12 @@
     font-size: 1.3vw;
   }
 }
+
+.tabs {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: stretch;
+  width: 100%;
+}
